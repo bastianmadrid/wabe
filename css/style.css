@@ -29,12 +29,21 @@ h6,
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.logoajuste {
+    width: 150px;
+    height: auto;
+    display: block
+}
+
 p {
     font-size: 1.2em;
 }
 
 .lead {
-    font-weight: 300;
+    font-weight: bolder;
+    color: #fcb41c;
+    font-size: 20px;
+    text-shadow: 3px 3px 5px black;
 }
 
 button {
@@ -164,7 +173,7 @@ header {
     padding: 150px 0px 0px 0px;
     height: 960px;
     background: url('../img/Duoc_UC\,_Viña_del_Mar_20200120_05.jpg');
-    background-color: white!important;
+    background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
