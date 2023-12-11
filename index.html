@@ -4,6 +4,7 @@
 <head>
     <title>Duoc uc asistencia </title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- CSS
         ================================================== -->
@@ -94,7 +95,20 @@
                 <div class="col-md-offset-2 col-md-8">
                     <h1>Accesible para todos los estudiantes</h1>
                     <p class="lead">Puedes obtener la app escaneando el siguiente codigo </p>
-                    <img src="img/QR_code.png" alt="">
+                    <div>
+                        <!-- Imagen QR -->
+                        <img id="qrCode" src="img/QR_code.png" alt="Código QR">
+                        <!-- Botón de descarga -->
+                        <button id="downloadButton" onclick="descargarImagen()">Descargar QR</button>
+                        <script>
+                            // Función para descargar la imagen (debes implementarla según tus necesidades)
+                            function descargarImagen() {
+                            // Lógica para descargar la imagen, por ejemplo, abrir un enlace con la imagen en una nueva pestaña
+                            var enlaceDescarga = 'https://drive.google.com/file/d/1iryUqob0TVHyunVMolVNXmJs8PzPyQxI/view?usp=sharing';
+                            window.open(enlaceDescarga, '_blank');
+                        }
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,20 +197,20 @@
 
                 <div class="col-md-4">
                     <div class="circle"><i class="icon-bookmark"></i></div>
-                    <h2>Quick &amp; Easy Setup</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <h2>Facil de aprender</h2>
+                    <p>Una app simple, sin rodeos con una interfaz amigable.</p>
                 </div>
 
                 <div class="col-md-4">
                     <div class="circle"><i class="icon-keypad"></i></div>
-                    <h2>Parallax Scrolling</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <h2>Navegacion simple</h2>
+                    <p>Una nevegacion sencilla donde encontraras todo lo que necesitas.</p>
                 </div>
 
                 <div class="col-md-4">
                     <div class="circle"><i class="icon-like"></i></div>
-                    <h2>Responsive Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <h2>Responsiva</h2>
+                    <p>Adaptable a cualquier tipo o tamaño de pantalla para que ninguno quede fuera.</p>
                 </div>
 
             </div>
